@@ -1,10 +1,9 @@
 public class Task7 {
+    public static boolean checkNumber(int a) {
+        return a<=0;
+    }
     public static void main(String args[]) {
-        int a = 1;
-   
-        if (a>=0){
-        System.out.print ("false");
-        }else {
-        System.out.print ("true");}
+        System.out.println (checkNumber (1));
+        System.out.println (checkNumber (-1));
     }
 }
