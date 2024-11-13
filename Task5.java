@@ -1,10 +1,11 @@
 public class Task5 {
-    public static void main(String args[]) {
-        int a = 1;
-        int b = 2;
-        if (a+b >=10&& a+b <= 20){
-        System.out.print ("true");
-        }else {
-        System.out.print ("false");}
+    public static boolean compareNumbers (int a, int b) {
+        int sum = a + b;
+        return sum >= 10 && sum <= 20;
+    }
+
+    public static void main(String[] args) {
+        System.out.println(compareNumbers(15, 5));
+        System.out.println(compareNumbers(20, 1));
     }
 }
